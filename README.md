@@ -3,9 +3,11 @@ client
 server/bouncer
 db/history
 
+**Not functional until a few private packages are made public.
+
 TODO:
-1	Rewrite client with methods organized by type client and type server. This should improve code organization/cognition. And facilitate dynamic clients and improve server creation.
-2	
+1.  Clean up paths. Undecided about using github to import quick and dirty packages.
+2.	Rewrite client with methods organized by type client and type server. This should improve code organization/cognition. And facilitate dynamic clients and improve server creation.
 
 Objectives: 
 Play with GO.
