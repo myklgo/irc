@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"winit.biz/gates"
+	"private/gates"
 
-	"winit.biz/go-ircevent"
+	"private/go-ircevent"
 )
 
 var (
