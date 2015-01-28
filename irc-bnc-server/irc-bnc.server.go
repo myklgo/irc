@@ -10,7 +10,7 @@ import (
 
 	"winit.biz/gates"
 
-	"github.com/thoj/go-ircevent"
+	"winit.biz/go-ircevent"
 )
 
 var (
@@ -266,7 +266,7 @@ func (t *client) ioFrom() {
 			}
 			bb := make([]byte, n)
 			copy(bb, b[:n])
-			
+
 			//irc commands
 			if bytes.HasPrefix(bb, []byte("/quit")) {
 				t.deActivate()
@@ -279,7 +279,7 @@ func (t *client) ioFrom() {
 					}
 				}
 				if i < len(irccs.ircs) && irccs.ircs[i].active.IsOpen() {
-					irccs.ircs[i].irc.Privmsg(irccs.ircs[i].n,string(bb[bytes.Index(bb,sp)+1:]))
+					irccs.ircs[i].irc.Privmsg(irccs.ircs[i].n, string(bb[bytes.Index(bb, sp)+1:]))
 				} else {
 					log.Println("Error !channel")
 					goto start

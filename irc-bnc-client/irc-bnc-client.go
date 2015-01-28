@@ -173,13 +173,13 @@ func toUser() chan []byte {
 				log.Println("toUser chan not ok")
 				return
 			}
-			
+
 			//log.Println("\nclient toUser ", string(bb))
 			ssb := bytes.SplitN(bb, sp, 4)
 			/*   			for _, v := range ssb {
-			   				log.Println(string(v))
-			   			}
-			   			log.Println("ssb len ",len(ssb))
+				log.Println(string(v))
+			}
+			log.Println("ssb len ",len(ssb))
 			*/
 			if bytes.Equal([]byte("PING"), ssb[0]) {
 				//handle PING
