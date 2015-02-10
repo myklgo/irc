@@ -6,8 +6,9 @@ db/history
 **Not functional until a few private packages are made public.
 
 TODO:
-1.  Clean up paths. Undecided about using github to import quick and dirty packages.
-2.	Rewrite client with methods organized by type client and type server. This should improve code organization/cognition. And facilitate dynamic clients and improve server creation.
+1.  Clean up paths. Need to identify ethical means of using forked lib.
+2.  Create protocol for User to Server.
+3.  Implement history storage and make it transparent to User.
 
 Objectives: 
 Play with GO.
